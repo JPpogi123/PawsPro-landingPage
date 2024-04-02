@@ -1863,7 +1863,7 @@
         <script>
             // Function to fetch and update the page view count
             function updatePageViews() {
-                fetch('http://localhost:3000/api/totalpageviews') // Assuming the server is running on the same host
+                fetch('https://scarlet-rattlesnake-shoe.cyclic.app/api/totalpageviews') // Assuming the server is running on the same host
                     .then(response => response.json())
                     .then(data => {
                         // Update the page view count in the HTML content
@@ -1871,11 +1871,9 @@
                     })
                     .catch(error => {
                         console.error('Error fetching page views:', error);
-                        // Optionally handle error - e.g., display a message
                     });
             }
     
-            // Call the function to update page views when the page loads
             window.onload = updatePageViews;
     
             // Update page views every 30 seconds
