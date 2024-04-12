@@ -1680,6 +1680,7 @@ Faq Area CSS
 Team Area CSS
 =================================================*/
 .team-area {
+  height: 850px;
   background-color: #fafafa;
   position: relative;
   z-index: 1;
@@ -1822,6 +1823,17 @@ Team Area CSS
 
 .single-team:hover .image .content p {
   color: #ffffff;
+}
+.team-discription {
+  display: none;
+}
+
+.single-team:hover + .team-discription {
+  display: block;
+  width: 100%;
+  left: 0;
+  justify-content: center;
+  border: solid red;
 }
 
 /*================================================
