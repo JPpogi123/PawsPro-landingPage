@@ -523,6 +523,11 @@ Banner Area CSS
 
 .main-banner .banner-content .banner-holder {
   display: flex;
+  margin-top: 30px;
+}
+
+.main-banner .banner-content .banner-holder .counter {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
@@ -534,7 +539,7 @@ Banner Area CSS
   background-color: var(--c1);
 }
 
-.main-banner .banner-content .banner-holder p {
+.main-banner .banner-content .banner-holder .counter p {
   font-size: 20px;
   font-weight: bold;
   color: #000000;
@@ -924,6 +929,36 @@ Banner Area CSS
             transform: translateY(0px);
   }
 }
+/*================================================
+Banner Res
+=================================================*/
+
+  /* SMALL SCREEN SIZE CSS */
+
+  @media screen and (max-width: 1441px) {
+
+  }
+  
+    /* TABLET SIZE CSS */
+  
+  @media screen and (max-width: 769px) {
+    .main-banner .banner-content .banner-holder {
+      justify-content: center;
+    }
+    
+  }
+  
+    /* MOBILE SIZE CSS */
+  
+  @media screen and (max-width: 426px) {
+    .main-banner .banner-content .banner-holder {
+      display: flex;
+      align-items: center;
+      row-gap: 20px;
+      flex-direction: column;
+    }
+  
+  }
 
 /*================================================
 Fun Facts Area CSS
@@ -1835,6 +1870,42 @@ Team Area CSS
   justify-content: center;
   border: solid red;
 }
+/*================================================
+team res
+=================================================*/
+  /* SMALL SCREEN SIZE CSS */
+
+  @media screen and (max-width: 1441px) {
+
+  }
+  
+    /* TABLET SIZE CSS */
+  
+  @media screen and (max-width: 769px) {
+    .team-area {
+      height: 1300px;
+    }
+
+    #team .container .row {
+      row-gap: 200px;
+      --bs-gutter-x: 3rem;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+  
+    /* MOBILE SIZE CSS */
+  
+  @media screen and (max-width: 426px) {
+    .team-area {
+      height: 2250px;
+    }
+
+    #team .container .row {
+      --bs-gutter-x: 3.5rem;
+      row-gap: 180px;
+    }
+  }
 
 /*================================================
 App Download Area CSS

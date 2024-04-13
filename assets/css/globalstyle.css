@@ -114,8 +114,9 @@
 }
 
 .float-text {
+  margin-top: 20px;
   height: 50px;
-  width: 450px;
+  width: 100%;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
@@ -146,7 +147,7 @@
     -webkit-transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(460px);
+    -webkit-transform: translateX(700px);
   }
 }
 
@@ -156,8 +157,8 @@
             transform: translateX(0);
   }
   to {
-    -webkit-transform: translateX(460px);
-            transform: translateX(460px);
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
   }
 }
 
@@ -237,6 +238,33 @@
 #adviser p {
   font-size: 13.5px;
 }
+
+  /* SMALL SCREEN SIZE CSS */
+
+  @media screen and (max-width: 1441px) {
+
+  }
+  
+    /* TABLET SIZE CSS */
+  
+  @media screen and (max-width: 769px) {
+    .content {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content h3 {
+      width: 80%;
+    }
+  }
+  
+    /* MOBILE SIZE CSS */
+  
+  @media screen and (max-width: 426px) {
+      
+  
+  }
 
 /* .item {
     -webkit-animation-duration:2s;
